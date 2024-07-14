@@ -22,5 +22,7 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
   ```
 - Copy the IP and the PORT of the server -
   ```
-   
+   <p align="center">
+    <img src=".github/misc/logo.png">
+   </p>
   ```
