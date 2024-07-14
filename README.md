@@ -11,4 +11,12 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
    - Set up Listener: Use msfconsole to listen on the specified TCP port.
    - Develop C Code: Write the C code to fetch and execute the payload.
    - Compile and Run: Compile the C code and execute.
+   - 
 ##
+
+### Tutorial
+
+- Create the tcp tunnel on the port 4444 -
+  ```
+  sudo ngrok tcp 4444
+  ```
