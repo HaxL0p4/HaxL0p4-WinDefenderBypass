@@ -27,5 +27,5 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
   ```
 
 <p align="center">
-    <img src=".github/misc/logo.png">
+    <img src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/ngrok-tcp.jpg">
    </p>
