@@ -20,3 +20,7 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
   ```
   sudo ngrok tcp 4444
   ```
+- Copy the IP and the PORT of the server -
+  ```
+   
+  ```
