@@ -40,8 +40,3 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
    - python -m http.server 8090
   ```
 
-  - Expose Server Online using serveo -
-  ```
-   -
-   -
-  ```
