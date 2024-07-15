@@ -1,3 +1,5 @@
+// Created By L0PA ;)
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
