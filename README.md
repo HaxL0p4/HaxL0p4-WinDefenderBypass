@@ -132,8 +132,15 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
 
  - Install the software "USB AutoRun Creator" from this link: "bit.ly/USB-AutoRun-Creator"
  - Follow the installation and open the software
+ 
   
  <img src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/AutorunCreator.png"/>
 
  - In the first field enter the path of the previously compiled .exe file, in the second field select your USB drive
  - The Icon and Label fields are optional
+ - Click on "Create"
+
+## 
+
+## 😈 Now, remove and reinsert the USB stick, and the victim is Hacked 
+<img align="center" src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/metasploit.png"/>
