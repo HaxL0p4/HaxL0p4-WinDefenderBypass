@@ -130,7 +130,7 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
 ### 💾 AutoRun USB
  ## Now, let's create a USB stick that will automatically run the file (autorun)
 
- - Install the software "USB AutoRun Creator" from this link: [**AutoRun Creator Download**](bit.ly/USB-AutoRun-Creator)
+ - Install the software "USB AutoRun Creator" from this link: [**AutoRun Creator Download**]<a href="bit.ly/USB-AutoRun-Creator" </a>
 
   
 
