@@ -13,6 +13,42 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
    - Compile and Run: Compile the C code and execute.
 ##
 
+### Install all requirements on debian
+   - Install Ngrok
+   ```
+  wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-stable-linux-amd64.zip
+  unzip ngrok-stable-linux-amd64.zip
+  sudo mv ngrok /usr/local/bin/
+  ```
+  - install msfconsole & msfvenom
+  ```
+  curl https://raw.githubusercontent.com/rapid7/metasploit-framework/master/scripts/ubuntu_install.sh > ubuntu_install.sh
+  chmod +x ubuntu_install.sh
+  ./ubuntu_install.sh
+  ```
+  - install gcc
+  ```
+  sudo apt install gcc-mingw-w64-x86-64
+  ```
+##
+
+### Install all requirements on Arch Linux
+   - Install Ngrok
+   ```
+  git clone https://aur.archlinux.org/ngrok-bin.git
+  cd ngrok-bin
+  makepkg -si
+  ```
+  - install msfconsole & msfvenom
+  ```
+  sudo pacman -S metasploit
+  ```
+  - install gcc
+  ```
+  sudo pacman -S mingw-w64-gcc
+  ```
+
+##
 ### Tutorial
 
 - Create the tcp tunnel on the port 4444
