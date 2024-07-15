@@ -63,7 +63,7 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
   ```
 
 <p align="center">
-    <img src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/ngrok-tcp.jpg">
+    <img src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/img/ngrok-tcp.jpg">
    </p>
 
 - Create the .bin payload using msfvenom 
@@ -88,7 +88,7 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
 ```
 
 <p align="start">
-   <img src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/command_variable.png">
+   <img src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/img/command_variable.png">
 </p>
 
 ##
@@ -134,7 +134,7 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
  - Follow the installation and open the software
  
   
- <img src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/AutorunCreator.png"/>
+ <img src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/img/AutorunCreator.png"/>
 
  - In the first field enter the path of the previously compiled .exe file, in the second field select your USB drive
  - The Icon and Label fields are optional
@@ -143,6 +143,6 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
 ## 
 
 ## 😈 Now, remove and reinsert the USB stick
-<img align="center" src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/metasploit.png"/>
+<img align="center" src="https://github.com/HaxL0p4/Bypass-Windows-Defender/blob/main/img/metasploit.png"/>
 
 ### ⚠️ The files in the USB stick with autorun will never have to be updated, to create the payload again, you will have to start a new TCP tunnel and create a new payload with msfvenom using the same name specified the first time, so that the new payload replaces the old one . Then just start the python server, and then the tunnel with serveo and connect the USB to the victim PC. Happy Hacking ;)
