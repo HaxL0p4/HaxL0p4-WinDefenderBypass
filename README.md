@@ -119,7 +119,7 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
 ```
    gcc main.c -o virus
 ```
-  - For Linux
+   - For Linux
 ```
    x86_64-w64-mingw32-gcc -o virus.exe main.c
    ```
