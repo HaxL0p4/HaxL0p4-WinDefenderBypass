@@ -126,7 +126,7 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
 
    ## ⚠️ don't forget the -mwindows parameter
 
-  ##
+  ## 😈 Now, run the virus.exe file on your Windows PC, and regardless of the network you are connected to, the TCP connection to metasploit will be established
 
   
 
