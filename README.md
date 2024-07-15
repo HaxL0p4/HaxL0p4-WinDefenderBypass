@@ -10,7 +10,8 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
    - Expose Server Online: Use Serveo to make the server accessible online.
    - Set up Listener: Use msfconsole to listen on the specified TCP port.
    - Develop C Code: Write the C code to fetch and execute the payload.
-   - Compile and Run: Compile the C code and execute.
+   - Compile and Run: Compile the C code.
+   - Create a USB with autorun
 ##
 
 ### Install all requirements on debian
@@ -126,7 +127,8 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
 
    ## ⚠️ don't forget the -mwindows parameter
 
-# 😈 Now, run the virus.exe file on your Windows PC, and regardless of the network you are connected to, the TCP connection to metasploit will be established
+## AutoRun USB
+ # Now, let's create a USB stick that will automatically run the file (autorun)
 
   
 
