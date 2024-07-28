@@ -1,5 +1,5 @@
 # Bypass-Windows-Defender
-Bypass Windows Defender with a staged reverse shells
+Bypass Windows Defender with a persistent staged reverse shells
 
 #### developed by L0PA
 
