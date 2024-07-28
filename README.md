@@ -1,5 +1,5 @@
 # Bypass-Windows-Defender
-Bypass Windows Defender with a staged C code &amp; metasploit framework
+Bypass Windows Defender with a staged reverse shells
 
 #### developed by L0PA
 
